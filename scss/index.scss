@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #c5c5c5;
+}
+.container {
+  max-width: 688px;
+  margin: 0 auto;
+}
+.header {
+  padding-top: 64px;
+  font-family: "Inter";
+  font-style: normal;
+  border-bottom: 1px solid #dee2e6;
+  &__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    color: #000;
+  }
+  &__text {
+    margin-bottom: 48px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 36px;
+    color: #000;
+  }
+  &__label-name,
+  &__label-school {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #818182;
+    margin-bottom: 3px;
+  }
+  &__select-school,
+  &__input-name {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    background: #ffffff;
+    color: #abb5be;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 9px 0;
+    padding-left: 15px;
+  }
+  &__input-name {
+    width: 452px;
+    height: 38px;
+  }
+  &__select-school {
+    width: 216px;
+    height: 38px;
+  }
+
+  &__choise {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &__line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #dee2e6;
+    margin-bottom: 40px;
+  }
+}
+
+.card {
+  width: 334px;
+  background-color: #fff;
+  color: #152536;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  &__img {
+    display: block;
+    width: 100%;
+    height: 192px;
+    object-fit: contain;
+    object-position: center;
+  }
+  &__main {
+    padding: 24px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__actor,
+  &__gender,
+  &__house,
+  &__wand-core,
+  &__alive {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  &__hidden{
+    display: none;
+  }
+}
+
+.main {
+  padding-top: 40px;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 334px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+}
